@@ -1,0 +1,40 @@
+<h1>Liste de Pokémons</h1>
+<div class="pokList">
+<div *ngFor="let pokemon of pokemonList" >
+  <!-- <h2 (click)="selectPokemon(input.value)">{{ pokemon.name }}</h2> -->
+  
+<wcs-card mode="raised">
+    <wcs-card-body pkmnBorderCard>
+        <img src={{pokemon.picture}} alt="" srcset="">
+        <div class="text">
+            <h2>{{ pokemon.name }}</h2>
+            <p><small>{{pokemon.created | date}}</small></p>
+        </div>
+        
+    </wcs-card-body>
+</wcs-card>
+  <h2 ></h2>
+
+</div>
+</div>
+<p>{{pokemonSelected?.name}}</p>
+<wcs-button class="wcs-primary">Click me!</wcs-button>
+<input #input (keyup.enter)="selectPokemon(input.value)" type="number">
+<router-outlet></router-outlet>
+
+
+<wcs-button (click)="modal.show = true">Show Modal</wcs-button>
+<wcs-modal show-close-button="" #modal>
+    <div slot="header">Titre de la modale</div>
+    Voulez-vous quittez la page ?
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a cursus mi. Nullam et sem mi. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Fusce sollicitudin pellentesque libero nec elementum.
+    </p>
+    <div slot="actions">
+        <wcs-button mode="stroked">Annuler
+        </wcs-button>
+        <wcs-button>OK
+        </wcs-button>
+    </div>
+</wcs-modal>

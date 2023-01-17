@@ -1,0 +1,20 @@
+
+.pokList{
+    display: flex;
+    gap: 1rem;
+}
+
+
+wcs-card-body{
+    display: flex;
+    justify-content: flex-end;
+}
+
+wcs-card{
+    width: fit-content;
+    padding: 0rem;
+
+}
+img{
+    width: min-content;
+}
