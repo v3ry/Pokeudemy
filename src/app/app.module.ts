@@ -5,9 +5,10 @@ import { WcsAngularModule } from "wcs-angular";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BorderCardDirective } from './border-card.directive';
+import { DroppableDirective } from './droppable.directive';
 
 @NgModule({
-  declarations: [AppComponent, BorderCardDirective],
+  declarations: [AppComponent, BorderCardDirective, DroppableDirective],
   imports: [BrowserModule, AppRoutingModule, WcsAngularModule],
   providers: [],
   bootstrap: [AppComponent],

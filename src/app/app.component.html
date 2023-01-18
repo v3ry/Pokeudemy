@@ -4,7 +4,7 @@
   <!-- <h2 (click)="selectPokemon(input.value)">{{ pokemon.name }}</h2> -->
   
 <wcs-card mode="raised">
-    <wcs-card-body pkmnBorderCard>
+    <wcs-card-body pkmnBorderCard >
         <img src={{pokemon.picture}} alt="" srcset="">
         <div class="text">
             <h2>{{ pokemon.name }}</h2>
@@ -23,6 +23,7 @@
 <router-outlet></router-outlet>
 
 
+
 <wcs-button (click)="modal.show = true">Show Modal</wcs-button>
 <wcs-modal show-close-button="" #modal>
     <div slot="header">Titre de la modale</div>
@@ -38,3 +39,13 @@
         </wcs-button>
     </div>
 </wcs-modal>
+<div class="test">
+<div class="example-box" appDroppable >Drag me around</div>
+<div class="example-box" appFreeDragging>Drag me around</div>
+
+</div>
+
+<div class="box" 
+appDroppable>
+  My box!
+</div>
