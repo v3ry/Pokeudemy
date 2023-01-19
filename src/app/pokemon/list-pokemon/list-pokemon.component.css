@@ -1,0 +1,123 @@
+
+.pokList{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+wcs-card-body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+}
+
+wcs-card{
+    width: fit-content;
+    padding: 0rem;
+
+}
+img{
+    width: min-content;
+}
+
+.example-box {
+    width: 200px;
+    height: 200px;
+    border: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .example-box.free-dragging {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .test{
+    width: 100wh;
+    height: 800px;
+  }
+
+  /* .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .red{
+    background-color: red;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .blue{
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .green{
+    background-color: green;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .brown{
+    background-color: brown;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .grey{
+    background-color: grey;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .deep-purple{
+    background-color: purple;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .pink{
+    background-color: pink;
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .lime{
+    background-color: lime;
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  }
+  .deep-orange{
+    background-color: orange;
+    color: white;
+    padding: 6px;
+    margin:5px;
+    border-radius: 11px;
+  } */
