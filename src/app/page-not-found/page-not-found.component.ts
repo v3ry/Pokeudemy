@@ -13,8 +13,6 @@ import { Component } from "@angular/core";
       </a>
     </div>
   `,
-  styles: [
-    ".center{ display:flex;flex-direction: column;flex-wrap: wrap;align-content: center;}",
-  ],
+  styles: [],
 })
 export class PageNotFoundComponent {}
