@@ -32,6 +32,24 @@ export class PokemonService {
     );
   }
 
+  addPokemon(pokemon: Pokemon): Observable<Pokemon> {
+    const httpOptions = {
+      headers: new HttpHeaders({ "Content-Type": "application/json" }),
+    };
+
+    return this.http.post<Pokemon>("api/pokemons", pokemon, httpOptions).pipe(
+      tap((res) => this.log(res)),
+      catchError((err) => this.handleError(err, null))
+    );
+  }
+
+  deletePokemonById(pokemonId: number): Observable<null> {
+    return this.http.delete(`api/pokemons/${pokemonId}`).pipe(
+      tap((response) => this.log(response)),
+      catchError((err) => this.handleError(err, null))
+    );
+  }
+
   private log(response: Pokemon[] | Pokemon | undefined | any) {
     console.table(response);
   }
@@ -39,6 +57,13 @@ export class PokemonService {
   private handleError(error: Error, errorValue: any) {
     console.error(error);
     return of(errorValue);
+  }
+
+  searchPokemonList(term: string): Observable<Pokemon[]> {
+    return this.http.get<Pokemon[]>(`api/pokemons/?name=${term}`).pipe(
+      tap((res) => this.log(res)),
+      catchError((err) => this.handleError(err, []))
+    );
   }
 
   getPokemonTypeList(): string[] {
