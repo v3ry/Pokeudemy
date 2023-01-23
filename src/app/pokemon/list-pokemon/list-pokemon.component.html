@@ -1,25 +1,20 @@
-<h1>Liste de Pokémons</h1>
-<div *ngIf="pokemonList" class="pokList">
-<div  *ngFor="let pokemon of pokemonList" >
-  <!-- <h2 (click)="selectPokemon(input.value)">{{ pokemon.name }}</h2> -->
-  
-<wcs-card mode="raised">
-    <wcs-card-body pkmnBorderCard (click)="goToPokemon(pokemon)" >
-        <img src={{pokemon.picture}} alt="" srcset="">
-        <div class="text">
-            <h2>{{ pokemon.name }}</h2>
-            <p><small>{{pokemon.created | date:"dd/MM/yy"}}</small></p>
-            <span *ngFor="let type of pokemon.types" class="{{type |pokemonTypeColor}}">
-              {{type}}
-            </span>
-        </div>
-        
-    </wcs-card-body>
-</wcs-card>
-  <h2 ></h2>
 
-</div>
-</div>
-<a class="btn-floating btn-large waves-effect wave-light red z-depth-3"
-style="position: fixed; bottom: 25px; right: 25px;"
-routerLink="/pokemon/add">+</a>
+  <div class='container'>
+    <div class="row">
+    <app-search-pokemon></app-search-pokemon>
+    <div *ngFor='let pokemon of pokemonList' class="col s6 m4">
+      <div class="card horizontal" (click)="goToPokemon(pokemon)" pkmnBorderCard>
+        <div class="card-image">
+          <img [src]="pokemon.picture">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ pokemon.name }}</p>
+            <p><small>{{ pokemon.created | date:"dd/MM/yyyy" }}</small></p>
+            <span *ngFor='let type of pokemon.types' class="{{ type | pokemonTypeColor }}">{{ type }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
