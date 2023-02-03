@@ -6,6 +6,7 @@
       <div class="card-image">
         <img [src]="pokemon.picture">
       </div>
+      <div appDragDrop="Some data to drag"></div>
       <div class="card-stacked">
         <wcs-card>
         <div class="card-content">
@@ -42,6 +43,7 @@
           <div class="card-action">
             Retour
           </div>
+          <div appDragDrop>Dropable zone</div>
         </a>
         <a (click)="goToEdit(pokemon)">
           <div class="card-action">

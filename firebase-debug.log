@@ -1,0 +1,83 @@
+[debug] [2023-01-24T10:21:37.357Z] ----------------------------------------------------------------------
+[debug] [2023-01-24T10:21:37.359Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\8610410S\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-24T10:21:37.359Z] CLI Version:   11.21.0
+[debug] [2023-01-24T10:21:37.360Z] Platform:      win32
+[debug] [2023-01-24T10:21:37.360Z] Node Version:  v16.15.0
+[debug] [2023-01-24T10:21:37.361Z] Time:          Tue Jan 24 2023 11:21:37 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2023-01-24T10:21:37.361Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-24T10:21:37.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-24T10:21:37.369Z] > authorizing via signed-in user (v3ryfr@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\8610410S\Documents\www\Wild2023\angular\ng-pokemon-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-24T10:22:12.694Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-01-24T10:22:12.694Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"legrascestlavie","name":"legrascestlavie"}
+[debug] [2023-01-24T10:22:13.590Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-01-24T10:22:13.590Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7466449678956400708"}
+[debug] [2023-01-24T10:22:13.592Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 [none]
+[debug] [2023-01-24T10:22:14.403Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 200
+[debug] [2023-01-24T10:22:14.403Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 {"name":"operations/cp.7466449678956400708"}
+[debug] [2023-01-24T10:22:14.905Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-01-24T10:22:14.905Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 [none]
+[debug] [2023-01-24T10:22:15.714Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 200
+[debug] [2023-01-24T10:22:15.715Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 {"name":"operations/cp.7466449678956400708","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-01-24T10:22:16.720Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-01-24T10:22:16.721Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 [none]
+[debug] [2023-01-24T10:22:17.598Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 200
+[debug] [2023-01-24T10:22:17.599Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7466449678956400708 {"name":"operations/cp.7466449678956400708","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"231154538022","projectId":"legrascestlavie","lifecycleState":"ACTIVE","name":"legrascestlavie","createTime":"2023-01-24T10:22:13.999Z"}}
+[debug] [2023-01-24T10:22:17.602Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/legrascestlavie:addFirebase [none]
+[debug] [2023-01-24T10:22:20.464Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/legrascestlavie:addFirebase 200
+[debug] [2023-01-24T10:22:20.464Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/legrascestlavie:addFirebase {"name":"operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm"}
+[debug] [2023-01-24T10:22:20.464Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm [none]
+[debug] [2023-01-24T10:22:21.105Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm 200
+[debug] [2023-01-24T10:22:21.105Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm {"name":"operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm"}
+[debug] [2023-01-24T10:22:21.620Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-01-24T10:22:21.622Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm [none]
+[debug] [2023-01-24T10:22:22.242Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm 200
+[debug] [2023-01-24T10:22:22.243Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm {"name":"operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm"}
+[debug] [2023-01-24T10:22:23.256Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-01-24T10:22:23.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm [none]
+[debug] [2023-01-24T10:22:23.912Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm 200
+[debug] [2023-01-24T10:22:23.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm {"name":"operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm"}
+[debug] [2023-01-24T10:22:25.922Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-01-24T10:22:25.923Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm [none]
+[debug] [2023-01-24T10:22:26.323Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm 200
+[debug] [2023-01-24T10:22:26.323Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm {"name":"operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm"}
+[debug] [2023-01-24T10:22:30.324Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2023-01-24T10:22:30.325Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm [none]
+[debug] [2023-01-24T10:22:30.916Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm 200
+[debug] [2023-01-24T10:22:30.916Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm {"name":"operations/workflows/NGMxZGZiOTgtMTJkMS00NjVkLWE2NTItMWY1Yjc3MGYwZGJm","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"legrascestlavie","projectNumber":"231154538022","displayName":"legrascestlavie","name":"projects/legrascestlavie","resources":{"hostingSite":"legrascestlavie"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: legrascestlavie
+[info]    - Project Name: legrascestlavie
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/legrascestlavie/overview
+[info] i  Using project legrascestlavie (legrascestlavie) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

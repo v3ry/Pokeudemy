@@ -11,6 +11,7 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./in-memory-data.service";
 import { LoginComponent } from "./login/login.component";
+import { DragDropDirective } from './drag-drop.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LoginComponent } from "./login/login.component";
     DroppableDirective,
     PageNotFoundComponent,
     LoginComponent,
+    DragDropDirective,
   ],
   imports: [
     BrowserModule,
